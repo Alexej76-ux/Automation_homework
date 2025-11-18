@@ -62,8 +62,5 @@ from your_module_name import count_word_matches   # <-- replace with your real m
 def test_count_word_matches_basic(text, target, expected):
     assert count_word_matches(text, target) == expected
 
-import re
 
-def count_word_matches(text: str, target: str) -> int:
-    pattern = rfr"\b{re.escape(target)}\b"
-    return len(re.findall(pattern, text, flags=re.IGNORECASE))
+
